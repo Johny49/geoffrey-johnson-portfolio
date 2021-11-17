@@ -7,6 +7,7 @@
 --white: #ffffffff;
 }
 
+/* css reset */
 html, * {
 	margin: 0;
 	padding: 0;
@@ -18,9 +19,11 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+/* header section */
 header {
     background-color: var(--lavender-web);
 }
+
 nav,
 nav a {
     display: flex;
@@ -44,6 +47,7 @@ h1 {
     padding: 0 8px;
 }
 
+/* hero section */
 .hero {
     height: 100px;
     display: flex;
@@ -59,7 +63,7 @@ h1 {
     color: var(--gunmetal);
 }
 
-
+/* main section */
 main {
     display: flex;
     flex-direction: column;
@@ -69,6 +73,7 @@ main {
 section {
     display: flex;
     flex-wrap: nowrap;
+    padding: 12px;
 }
 
 .section-header {
@@ -83,9 +88,44 @@ section {
 }
 
 #headshot {
-    width: 150px;
+    display: block;
+    min-width: 50px;
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    margin: 8px;
+    box-shadow: 4px 8px 4px var(--metallic-seaweed);
 }
 
+.project-card {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.main-project-card img {
+    max-width: 100%;
+}
+
+.project-card img {
+    max-width: 50%;
+}
+
+/* horizontal line and footer */
+hr {
+    height: 1px;
+    background-color: var(--metallic-seaweed);
+    border: none;
+}
+
+footer {
+    padding: 4px 12px;
+    color: var(--beau-blue);
+}
+
+#copyright::after {
+    content: "\00a9";
+}
 
 /* media queries */
 @media screen and (max-width: 992px) {
