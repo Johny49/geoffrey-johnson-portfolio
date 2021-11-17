@@ -29,7 +29,6 @@ nav a {
     color: var(--metallic-seaweed);
     text-decoration: none;
     text-emphasis:;
-    margin: 4px;
     padding: 8px;
 
 }
@@ -44,7 +43,17 @@ nav a:hover {
 
 h1 {
     color: var(--gunmetal);
-    padding: 4x;
+}
+
+.hero {
+    background: var(--metallic-seaweed);
+    background: linear-gradient(0deg, var(--metallic-seaweed) 0%, var(--beau-blue)) 35%, 
+    var(--lavender-web) 100%;
+    height: 100px;
+}
+
+main {
+
 }
 
 h2 {
