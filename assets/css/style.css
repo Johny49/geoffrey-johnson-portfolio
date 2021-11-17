@@ -1,8 +1,55 @@
 :root {
-    /* CSS HEX */
+    /* CSS HEX Colors*/
 --gunmetal: #022b3aff;
 --metallic-seaweed: #1f7a8cff;
 --beau-blue: #bfdbf7ff;
 --lavender-web: #e1e5f2ff;
 --white: #ffffffff;
+}
+
+html, * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gunmetal);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: var(--lavender-web);
+}
+nav,
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
+    color: var(--metallic-seaweed);
+    margin: 4px;
+}
+
+nav a:hover {
+    /* border: 2px var(--gunmetal) solid; */
+    background-color: var(--gunmetal);
+    color: var(--beau-blue);
+    border-radius: 4px;
+}
+
+h1 {
+    color: var(--gunmetal);
+}
+
+h2 {
+    color: var(--beau-blue);
+}
+
+p {
+    color: var(--white);
+}
+
+#headshot {
+    width: 150px;
 }
