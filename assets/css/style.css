@@ -129,7 +129,7 @@ article {
     height: 150px;
     align-items: flex-start;
     justify-content: center;
-    border: 2px var(--beau-blue) solid;
+    border: 2px transparent solid;
 }
 
 article > img {
@@ -182,7 +182,9 @@ footer {
 
 /* media queries */
 @media screen and (max-width: 992px) {
-    width: 40%;
+    .hero {
+        height: 60px;
+    }    
 }
 
 @media screen and (max-width: 600px) {
