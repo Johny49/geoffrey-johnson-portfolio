@@ -14,7 +14,7 @@ Web portfolio of html and css projects by Geoff Johnson.
 portfolio of web development projects and information about me, Geoff Johnson
 
 ## Screenshot
-![Screenshot of portfolio webpage](./assets/images/)
+![Screenshot of portfolio webpage](./assets/images/readme-screenshot.png)
 
 
 ## Link
