@@ -19,38 +19,11 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-/* header section */
-header {
-    background-color: var(--lavender-web);
-}
-
-/* menu for small screens - hidden by default */
-.dropdown {
-    display: none;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 150px;
-    padding: 12px 12px;
-    z-index: 1;
-    background-color: var(--lavender-web);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 nav,
 nav a {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: var(--metallic-seaweed);
+    color: var(--gunmetal);
     text-decoration: none;
     padding: 8px;
-
 }
 
 nav a:hover {
@@ -60,54 +33,29 @@ nav a:hover {
     transition: linear;
 }
 
-h1 {
-    color: var(--gunmetal);
-    padding: 0 8px;
-}
-
-/* hero section */
-.hero {
-    height: 100px;
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: right;
-    /* set gradient for hero */
+.sub-bar {
+    height: 40px;
+    /* set gradient for bar under nav */
     background: var(--metallic-seaweed);
     background: linear-gradient(0deg, var(--metallic-seaweed) 0%, var(--beau-blue)) 35%, var(--lavender-web) 100%;
 }
 
-.hero h2 {
+.sub-bar h4 {
     color: var(--gunmetal);
     padding: 0 8px;
 }
-/* Main Sections */
-section {
-    display: flex;
-    padding: 20px;
-}
 
 section h2 {
-    text-align: right;
-    min-width: 100px;
-    max-width: 30%;
     color: var(--beau-blue);
-    padding: 0 4px;
 }
 
 .section-content {
     color: var(--white);
-    padding: 0 12px;
     border-left: 2px solid var(--metallic-seaweed);
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-
 }
 
 .section-content p {
     line-height: 1.6em;
-    padding: 0 8px;
 }
 
 #headshot {
@@ -163,7 +111,7 @@ article h6 {
     margin: 4px;
 }
 
-/* horizontal line and footer */
+/* horizontal line above footer */
 hr {
     height: 1px;
     background-color: var(--metallic-seaweed);
@@ -172,7 +120,6 @@ hr {
 }
 
 footer {
-    padding: 4px 12px;
     color: var(--beau-blue);
 }
 
@@ -180,26 +127,11 @@ footer {
     content: "\00a9";
 }
 
-/* media queries */
-@media screen and (max-width: 992px) {
-    .hero {
-        height: 60px;
-    }    
-}
 
 @media screen and (max-width: 600px) {
 
     /* hide nav and display dropdown */
-    nav {
-        display: none;
-    }
-    
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-
-    article {
+    /* article {
         width: 100%;
         height: 100px;
     }
@@ -207,5 +139,5 @@ footer {
     article a :nth-child(1) {
         width: 100%;
         height: 150px;
-    }
+    } */
 }

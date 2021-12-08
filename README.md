@@ -1,5 +1,5 @@
 # geoffrey-johnson-portfolio
-Web portfolio of html and css projects by Geoff Johnson.
+Web portfolio of projects by Geoff Johnson.
 
 ## Table of Contents
 * [Description](#description)
@@ -11,14 +11,14 @@ Web portfolio of html and css projects by Geoff Johnson.
 * [Project Status](#project-status)
 
 ## Description 
-portfolio of web development projects and information about me, Geoff Johnson
+Portfolio of web development projects and information about me, Geoff Johnson
 
 ## Screenshot
 ![Screenshot of portfolio webpage](./assets/images/readme-screenshot.png)
 
 
 ## Link
-[Horiseon website](https://johny49.github.io/geoffrey-johnson-portfolio)
+[Portfolio website](https://johny49.github.io/geoffrey-johnson-portfolio)
 
 
 ## Code
@@ -32,6 +32,8 @@ Created by [@johny49](https://github.com/Johny49/) - feel free to contact me!
 ## Technologies
 - HTML
 - CSS
+- JS
+
 
 ## Project Status
 Project is: initial build completed; future updates to include additional projects.
