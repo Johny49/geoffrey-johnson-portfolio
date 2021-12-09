@@ -6,13 +6,13 @@
     <link rel="icon" type="image/png" href="./assets/images/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: Add to description and keywords -->
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
     <!-- link to Google Font API -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <!-- TODO: Add to description and keywords -->
-    <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -55,7 +55,8 @@
             <div class="section-content col-10">
                 <img id="headshot" src="./assets/images/headshot.png"
                     alt="headshot of Geoffrey Johnson, a white male wearing purple shirt and tie" class="img-fluid p-1">
-                <p class="px-2">My experience includes supporting both technology and users of technology, working collaboratively to
+                <p class="px-2">My experience includes supporting both technology and users of technology, working
+                    collaboratively to
                     implement new initiatives, and development and facilitation of training and professional development
                     sessions. I have earned a degree in network administration, am a certified teacher, and continually
                     engage in learning opportunities to expand my skillset. In addition, I bring a robust knowledge of
@@ -64,37 +65,110 @@
         </section>
         <section id="work" class="row py-4">
             <h2 class="section-header  col-lg-2 col-sm-12 p-3">Work</h2>
-            <div class="section-content col-10">
-                <article>
-                    <a href="https://johny49.github.io/test-your-knowledge/" target="_blank">
-                        <img src="./assets/images/main-project.png" alt="screenshot of test your knowledge webpage">
-                    </a>
-                    <h6>Test Your Knowledge JavaScript Quiz</h6>
-                </article>
-                <article>
-                    <a href="https://johny49.github.io/weather-dashboard/" target="_blank">
-                    <img src="./assets/images/project2.png" alt="screenshot of weather dashboard webpage">
-                </a>
-                    <h6>Weather Dashboard</h6>
-                </article>
-                <article>
-                    <a href="https://johny49.github.io/password-generator/" target="_blank">
-                    <img src="./assets/images/project3.png" alt="screenshot of password generator webpage">
-                </a>
-                    <h6>Password Generator</h6>
-                </article>
-                <article>
-                    <a href="https://johny49.github.io/plan-it/" target="_blank">
-                    <img src="./assets/images/project4.png" alt="screenshot of plan it work day scheduler">
-                </a>
-                    <h6>Plan It</h6>
-                </article>
-                <article>
-                    <a href="https://johny49.github.io/seo-refactor-project/" target="_blank">
-                    <img src="./assets/images/project5.png" alt="screenshot of Horiseon webpage">
-                </a>
-                    <h6>Horiseon SEO Refactor Project</h6>
-                </article>
+            <div class="section-content col-lg-10 col-sm-12">
+                <!-- carousel for projects -->
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <!-- buttons to choose specific slides -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <!-- project 1 -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img" width="100%" height="100%"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#bfdbf7ff" />
+                                <image href="./assets/images/project2.png" alt="screenshot of weather dashboard">
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-start">
+                                    <p><a class="btn btn-lg carousel-link-btn" href="https://johny49.github.io/weather-dashboard/" target="_blank">Weather Dashboard</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project 2 -->
+                        <div class="carousel-item active">
+                            <svg class="bd-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#777" />
+                                <image href="./assets/images/main-project.png" alt="screenshot of test your knowledge webpage">
+                            </svg>
+
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <p><a class="btn btn-lg carousel-link-btn" href="https://johny49.github.io/test-your-knowledge/" target="_blank">Test Your Knowledge JavaScript</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project 3 -->
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img" width="100%" height="100%"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#777" />
+                                <image href="./assets/images/project2.png" alt="screenshot of password generator webpage">
+                            </svg>
+
+                            <div class="container">
+                                <div class="carousel-caption text-end">
+                                    <p><a class="btn btn-lg carousel-link-btn" href="https://johny49.github.io/password-generator/" target="_blank">Password Generator</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project 4 -->
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img" width="100%" height="100%"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#777" />
+                                <image href="./assets/images/project4.png" alt="screenshot of plan it work day scheduler">
+                            </svg>
+
+                            <div class="container">
+                                <div class="carousel-caption text-end">
+                                    <p><a class="btn btn-lg carousel-link-btn" href="https://johny49.github.io/plan-it/" target="_blank">Plan It</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project 5 -->
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img" width="100%" height="100%"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#777" />
+                                <image href="./assets/images/project5.png" alt="screenshot of Pokedex website">
+                            </svg>
+
+                            <div class="container">
+                                <div class="carousel-caption text-end">
+=                                    <p><a class="btn btn-lg carousel-link-btn" href="https://bigzeus2005.github.io/pokedex/" target="_blank">Pokedex</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- buttons to move between projects -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- end carousel -->
             </div>
         </section>
         <section id="contact" class="row py-4">

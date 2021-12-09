@@ -69,37 +69,40 @@ section h2 {
     box-shadow: 4px 8px 4px var(--metallic-seaweed);
 }
 
-article {
-    display: flex;
-    width: 50%;
-    overflow: hidden;
-    position: relative;
-    height: 150px;
-    align-items: flex-start;
-    justify-content: center;
-    border: 2px transparent solid;
-}
+/* CUSTOMIZE THE CAROUSEL, from Boostrap custom components
+-------------------------------------------------- */
 
-article > img {
-    width: 100%;
-    height: auto;
-}
-
-article a > :nth-child(1) {
-    width: 100%;
-    /* height: 250px; */
-}
-
-article h6 {
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
     position: absolute;
+    top: 0;
     left: 0;
-    top: 50%;
-    padding: 16px;
-    border: 1px var(--beau-blue) solid;
-    background-color: var(--white);
-    color: var(--metallic-seaweed);
-    display: block;
-    transform: translateY(-50%);
+    min-width: 100%;
+    height: 32rem;
+  }  
+
+  /* project link buttons */
+  .carousel-link-btn {
+      background-color: var(--lavender-web);
+=  }
+
+  .carousel-link-btn:hover {
+    background-color: var(--gunmetal);
+    color: var(--lavender-web);
+    border: 3px solid var(--metallic-seaweed);
 }
 
 /* change color of links to increase contrast */
