@@ -76,43 +76,22 @@ section h2 {
 .carousel {
     margin-bottom: 4rem;
   }
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-  }
   
   /* Declare heights because of positioning of img element */
-  .carousel-item {
+.carousel-item {
     height: 32rem;
   }
-  .carousel-item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 32rem;
-  }  
 
-  /* project link buttons */
-  .carousel-link-btn {
-      background-color: var(--lavender-web);
-=  }
-
-  .carousel-link-btn:hover {
-    background-color: var(--gunmetal);
-    color: var(--lavender-web);
-    border: 3px solid var(--metallic-seaweed);
+.btn {
+    color: var(--gunmetal);
+    padding: 4px;
 }
 
-/* change color of links to increase contrast */
-.section-content > a {
-    color: var(--metallic-seaweed);
-    background-color: var(--white);
-    padding: 2px;
-    border-radius: 4px;
-    margin: 4px;
+.btn:hover {
+    background-color: var(--lavender-web);
+    color: var(--gunmetal);
 }
+/* End Carousel */
 
 /* horizontal line above footer */
 hr {
