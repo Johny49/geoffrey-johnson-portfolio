@@ -75,12 +75,18 @@ section h2 {
 /* Carousel base class */
 .carousel {
     margin-bottom: 4rem;
-  }
-  
-  /* Declare heights because of positioning of img element */
-.carousel-item {
-    height: 32rem;
-  }
+}
+
+/* set color for carousel controls */
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+    filter: invert(100%);
+}
+
+.card-title {
+    color: var(--metallic-seaweed);
+}
 
 .btn {
     color: var(--gunmetal);
@@ -89,6 +95,10 @@ section h2 {
 
 .btn:hover {
     background-color: var(--lavender-web);
+    color: var(--gunmetal);
+}
+
+.card-text {
     color: var(--gunmetal);
 }
 /* End Carousel */
